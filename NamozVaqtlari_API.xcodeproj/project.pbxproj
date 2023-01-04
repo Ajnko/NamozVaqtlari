@@ -15,6 +15,8 @@
 		CC5AA39E296444E60008ADF2 /* NamozVaqtlari_API.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC5AA39C296444E60008ADF2 /* NamozVaqtlari_API.xcdatamodeld */; };
 		CC5AA3A0296444E70008ADF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC5AA39F296444E70008ADF2 /* Assets.xcassets */; };
 		CC5AA3A3296444E70008ADF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5AA3A1296444E70008ADF2 /* LaunchScreen.storyboard */; };
+		CC982D792965F36400B2FD61 /* PrayingTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC982D782965F36400B2FD61 /* PrayingTimes.swift */; };
+		CC982D7B2965F38A00B2FD61 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC982D7A2965F38A00B2FD61 /* InfoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		CC5AA39F296444E70008ADF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC5AA3A2296444E70008ADF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC5AA3A4296444E70008ADF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC982D782965F36400B2FD61 /* PrayingTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayingTimes.swift; sourceTree = "<group>"; };
+		CC982D7A2965F38A00B2FD61 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		EAD8C7CFF05E28452E7298A0 /* Pods-NamozVaqtlari_API.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NamozVaqtlari_API.debug.xcconfig"; path = "Target Support Files/Pods-NamozVaqtlari_API/Pods-NamozVaqtlari_API.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				CC5AA397296444E60008ADF2 /* ViewController.swift */,
+				CC982D7A2965F38A00B2FD61 /* InfoTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -113,6 +118,7 @@
 		CCE6585B29644C0D008AA098 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CC982D782965F36400B2FD61 /* PrayingTimes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -242,7 +248,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC5AA39E296444E60008ADF2 /* NamozVaqtlari_API.xcdatamodeld in Sources */,
+				CC982D792965F36400B2FD61 /* PrayingTimes.swift in Sources */,
 				CC5AA398296444E60008ADF2 /* ViewController.swift in Sources */,
+				CC982D7B2965F38A00B2FD61 /* InfoTableViewCell.swift in Sources */,
 				CC5AA394296444E60008ADF2 /* AppDelegate.swift in Sources */,
 				CC5AA396296444E60008ADF2 /* SceneDelegate.swift in Sources */,
 			);

@@ -11,6 +11,8 @@ import Kingfisher
 
 class ViewController: UIViewController {
 
+    //MARK: - Text Field -
+    
     let search: UITextField = {
        let search = UITextField()
         search.placeholder = " Search "
@@ -19,6 +21,7 @@ class ViewController: UIViewController {
         return search
     }()
     
+    //MARK: - Table View -
     
     let tableView: UITableView = {
        let tableView = UITableView()
