@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     let city = String()
     let locationManager = CLLocationManager()
     
-    let regions = ["Toshkent", "Andijon", "Navoiy", "Buxoro", "Namangan"]
+    let regions = ["Toshkent", "Andijon", "Navoiy", "Buxoro", "Namangan", "Jizzax", "Samarqand"]
     
     //MARK: - Text Field
     
@@ -46,6 +46,12 @@ class ViewController: UIViewController {
     let locationButton: UIButton = {
        let location = UIButton()
         return location
+    }()
+    
+    let activeIndictor: UIActivityIndicatorView = {
+       let active = UIActivityIndicatorView()
+        active.style = .large
+        return active
     }()
     
     
@@ -104,12 +110,22 @@ class ViewController: UIViewController {
             make.top.equalTo(tableView.snp.bottom).offset(10)
             make.width.centerX.bottom.equalToSuperview()
         }
+        
+        view.addSubview(activeIndictor)
+        activeIndictor.isHidden = false
+        activeIndictor.startAnimating()
+        activeIndictor.snp.makeConstraints { make in
+            make.top.equalTo(tableView.snp.bottom).offset(5)
+            make.centerX.equalToSuperview()
+        }
 
     }
     
     //MARK: - Fetching Data
     
     func fetchData(region: String) {
+        self.activeIndictor.startAnimating()
+        self.activeIndictor.isHidden = false
         //url
         let url = URL(string: "https://www.azamjondev.deect.ru/namozvaqtlari/index.php?region=\(region)")
         
@@ -141,7 +157,11 @@ class ViewController: UIViewController {
 
             DispatchQueue.main.async {
                 self.tableView.reloadData()
+
+                self.activeIndictor.isHidden = true
+                self.activeIndictor.stopAnimating()
             }
+            
         }
         dataTask.resume()
     }
